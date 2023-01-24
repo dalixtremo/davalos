@@ -2,6 +2,7 @@
 
 For a better experience please import the postman collection and run the endpoint so you can test and try. 
 
+  resources/Assessment.postman_collection.json
 
 Thank you very much for giving me the opportunity to participate. 
 

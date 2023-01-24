@@ -6,6 +6,7 @@ insert into customer (first_name, last_name) values
 ('David', 'Palmer'),
 ('Michelle', 'Dessler');
 
+
 insert into order_sale (amount, customer_id, transaction_date, rewards) values
     (160, 1, '2023-01-21 16:30:01.850', 23),
     (40, 2, '2023-01-21 16:30:01.850', 23),

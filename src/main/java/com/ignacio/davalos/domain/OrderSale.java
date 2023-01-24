@@ -20,7 +20,7 @@ public class OrderSale implements Serializable {
     @Id
     @GeneratedValue
     private int orderSaleId ;
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name="customer_id",referencedColumnName="customerId", insertable=false, updatable=false)
     private Customer customerId;
 

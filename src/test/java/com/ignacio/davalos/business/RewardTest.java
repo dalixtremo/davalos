@@ -1,6 +1,6 @@
 package com.ignacio.davalos.business;
 
-import com.ignacio.davalos.ops.Reward;
+import com.ignacio.davalos.ops.Calculous;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,11 +11,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RewardTest {
 
-    Reward reward;
+    Calculous reward;
 
     @BeforeEach
     public void ini(){
-         reward = new Reward();
+         reward = new Calculous();
     }
 
     @Test

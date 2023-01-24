@@ -3,10 +3,7 @@ package com.ignacio.davalos.domain;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
@@ -15,7 +12,8 @@ import java.io.Serializable;
 public class Customer implements Serializable {
     @Id
     @Column
-    @GeneratedValue
+//    @SequenceGenerator(name= "customer_sequence", sequenceName = "customer_sequence_id", initialValue=1, allocationSize = 1)
+    @GeneratedValue(strategy=GenerationType.AUTO, generator="customer_sequence")
     private Long customerId;
     @Column
     private String firstName;

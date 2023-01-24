@@ -3,6 +3,7 @@ CREATE TABLE customer(
   first_name VARCHAR(100),
   last_name VARCHAR(100)
 );
+-- CREATE SEQUENCE customer_sequence_id start with (select max(customer_id) + 1 from customer);
 
 CREATE TABLE order_sale(
                            order_sale_id BIGINT AUTO_INCREMENT PRIMARY KEY,
